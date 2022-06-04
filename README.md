@@ -89,11 +89,6 @@ c:\xampp\mysql\bin\backup2_deniluqmantoro_312010071.sql
 
 4. Tulisakan script cron job untuk melakukan backup otomatis setiap hari minggu jam 12 malam!
 
-0 0 * * 7
+crontab –e
 
-
-
-
-
-
-
+0 0 * * 7myqldump -u root -p nurokhim_312010064>nurokhim_312010064_backup.sql
